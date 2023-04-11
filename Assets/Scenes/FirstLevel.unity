@@ -483,11 +483,11 @@ Animator:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1952133907}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: d49af8694c5ff854eae4c1f1f307bdd8, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 355b327d36bba34458fd8135b99b57bd, type: 3}
   m_Controller: {fileID: 9100000, guid: 2ed359e2d7ee33743b4cd862076345ac, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
