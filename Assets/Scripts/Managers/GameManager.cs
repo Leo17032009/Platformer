@@ -40,6 +40,6 @@ public class GameManager : MonoBehaviour
 
     public void PlayJumpSound()
     {
-        _jumpSound.PlayOneShot(_clipOfJumping, 1);
+        _jumpSound.PlayOneShot(_clipOfJumping, 1.5f);
     }
 }
