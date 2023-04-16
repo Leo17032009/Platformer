@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioSource _backgroundSound;
     [SerializeField] private AudioSource _damageSound;
     [SerializeField] private AudioSource _jumpSound;
+    [SerializeField] private AudioClip _clipOfJumping;
 
     private int _currentGold;
 
@@ -39,6 +40,6 @@ public class GameManager : MonoBehaviour
 
     public void PlayJumpSound()
     {
-        _jumpSound.Play();
+        _jumpSound.PlayOneShot(_clipOfJumping, 1);
     }
 }
