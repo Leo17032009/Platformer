@@ -21,8 +21,6 @@ public class PlayerController : MonoBehaviour
     {
         _characterController = GetComponent<CharacterController>();
         _gameManager = FindObjectOfType<GameManager>();
-
-        _animator.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal"))));
     }
 	
 	// Update is called once per frame

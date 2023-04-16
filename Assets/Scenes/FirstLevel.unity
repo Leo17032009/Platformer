@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.8104361, g: 0.85152054, b: 0.9843851, a: 1}
+  m_IndirectSpecularColor: {r: 0.8107935, g: 0.85152173, b: 0.9839403, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -234,8 +234,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: ef66e2e48740b53449e2a2d69528380d, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -314,8 +314,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: b576957e6ba4c5c46800c949240f0bec, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -394,7 +394,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: eae92ed71d36071458813996d7ef8e4a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -474,8 +474,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 67f11e6ef6d8a3e489d96e7642dca207, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -849,7 +849,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1391958047}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.05, z: 3.4}
+  m_LocalPosition: {x: 0, y: 2, z: 3.4}
   m_LocalScale: {x: 0.8109208, y: 1.1332585, z: 1.4919671}
   m_Children:
   - {fileID: 1952133906}
@@ -993,7 +993,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4442292949824776, guid: eea16ef0f58854448aaa9db9257bc84b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.06501484
+      value: -0.025
       objectReference: {fileID: 0}
     - target: {fileID: 4442292949824776, guid: eea16ef0f58854448aaa9db9257bc84b, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1060,7 +1060,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 0cbff68bdaed68947bcbb8de7279d816, type: 3}
   m_Controller: {fileID: 9100000, guid: 2ed359e2d7ee33743b4cd862076345ac, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
