@@ -45,10 +45,10 @@ public class PlayerController : MonoBehaviour
 
 		_moveDirection.y = _moveDirection.y + (Physics.gravity.y * _gravityScale * Time.deltaTime);
 		_characterController.Move(_moveDirection * Time.deltaTime);
+        transform.rotation = Quaternion.Euler(0f, _pivot.rotation.eulerAngles.y, 0f);
 
-		if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) 
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) 
 		{
-			transform.rotation = Quaternion.Euler(0f, _pivot.rotation.eulerAngles.y, 0f);
 			Quaternion newRotation = Quaternion.LookRotation(new Vector3(_moveDirection.x, 0f, _moveDirection.z));
 			_playerModel.transform.rotation = Quaternion.Slerp(_playerModel.transform.rotation, newRotation, _rotateSpeed * Time.deltaTime);
 		}

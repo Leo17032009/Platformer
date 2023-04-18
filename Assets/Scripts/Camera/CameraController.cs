@@ -26,10 +26,20 @@ public class CameraController : MonoBehaviour
         _pivot.transform.position = _target.transform.position;
 
         float horizontal = Input.GetAxis("Mouse X") * _rotateSpeed;
-        _pivot.Rotate(0, horizontal, 0);
+        //float vertical = Input.GetAxis("Mouse Y") * _rotateSpeed;
+
+        /*if (_pivot.eulerAngles.x < 60)
+        {
+            _pivot.Rotate(vertical, horizontal, 0);
+        }*/
+        //else
+        //{
+            _pivot.Rotate(0, horizontal, 0);
+        //}
 
         float desiredYAngle = _pivot.eulerAngles.y;
-        Quaternion rotation = Quaternion.Euler(0, desiredYAngle, 0);
+        float desiredXYangle = _pivot.eulerAngles.x;
+        Quaternion rotation = Quaternion.Euler(desiredXYangle, desiredYAngle, 0);
         transform.position = _target.position - (rotation * _offset);
 
         transform.LookAt(_target);
