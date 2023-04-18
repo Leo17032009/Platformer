@@ -655,6 +655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 1391958051}
   _pivot: {fileID: 1937946022}
+  _playerModel: {fileID: 1952133906}
   _rotateSpeed: 5
 --- !u!1001 &1329669727
 Prefab:

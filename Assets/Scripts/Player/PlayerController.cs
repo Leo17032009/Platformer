@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController _characterController;
     private Vector3 _moveDirection;
     private GameManager _gameManager;
+    private bool _isJumping;
 
 	// Use this for initialization
 	private void Start ()
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
 	// Update is called once per frame
 	private void Update ()
     {
+        _isJumping = false;
         //_moveDirection = new Vector3(Input.GetAxis("Horizontal") * _moveSpeed, _moveDirection.y, Input.GetAxis("Vertical") * _moveSpeed);
         float yStore = _moveDirection.y;
 		_moveDirection = (transform.forward * Input.GetAxis("Vertical") * _moveSpeed) + (transform.right * Input.GetAxis("Horizontal"));
@@ -40,6 +42,7 @@ public class PlayerController : MonoBehaviour
 			{
 				_gameManager.PlayJumpSound();
 				_moveDirection.y = _jumpForce;
+                _isJumping = true;
 			}
 		}
 
@@ -55,5 +58,6 @@ public class PlayerController : MonoBehaviour
 
 		_animator.SetBool("isGrounded", _characterController.isGrounded);
 		_animator.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal"))));
+        _animator.SetBool("isJumping", _isJumping);
 	}
 }

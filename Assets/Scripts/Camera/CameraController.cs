@@ -6,6 +6,7 @@ public class CameraController : MonoBehaviour
 {
     [SerializeField] private Transform _target;
     [SerializeField] private Transform _pivot;
+    [SerializeField] private Transform _playerModel;
     [SerializeField] private float _rotateSpeed;
     private Vector3 _offset;
 
@@ -38,8 +39,8 @@ public class CameraController : MonoBehaviour
         //}
 
         float desiredYAngle = _pivot.eulerAngles.y;
-        float desiredXYangle = _pivot.eulerAngles.x;
-        Quaternion rotation = Quaternion.Euler(desiredXYangle, desiredYAngle, 0);
+        //float desiredXYangle = _pivot.eulerAngles.x;
+        Quaternion rotation = Quaternion.Euler(0, desiredYAngle, 0);
         transform.position = _target.position - (rotation * _offset);
 
         transform.LookAt(_target);
