@@ -11,7 +11,7 @@ public class CameraController : MonoBehaviour
     private Vector3 _offset;
 
 	// Use this for initialization
-	private void Start ()
+	private void Start()
     {
         _offset = _target.position - transform.position;
 
@@ -21,28 +21,18 @@ public class CameraController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 	}
 	
-	// Update is called once per frame
-	private void LateUpdate ()
+	private void LateUpdate()
     {
         _pivot.transform.position = _target.transform.position;
 
         float horizontal = Input.GetAxis("Mouse X") * _rotateSpeed;
-        //float vertical = Input.GetAxis("Mouse Y") * _rotateSpeed;
 
-        /*if (_pivot.eulerAngles.x < 60)
-        {
-            _pivot.Rotate(vertical, horizontal, 0);
-        }*/
-        //else
-        //{
-            _pivot.Rotate(0, horizontal, 0);
-        //}
+        _pivot.Rotate(0, horizontal, 0);
 
         float desiredYAngle = _pivot.eulerAngles.y;
-        //float desiredXYangle = _pivot.eulerAngles.x;
         Quaternion rotation = Quaternion.Euler(0, desiredYAngle, 0);
         transform.position = _target.position - (rotation * _offset);
 
         transform.LookAt(_target);
-	}
+    }
 }
