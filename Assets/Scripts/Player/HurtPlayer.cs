@@ -1,0 +1,23 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class HurtPlayer : MonoBehaviour
+{
+    private GameManager _gameManager;
+
+	// Use this for initialization
+	private void Start()
+    {
+        _gameManager = FindObjectOfType<GameManager>();
+	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            _gameManager.PlayDamageSound();
+            FindObjectOfType<HealthManager>().HurtPlayer();
+        }
+    }
+}
