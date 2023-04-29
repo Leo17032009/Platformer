@@ -11,16 +11,18 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioSource _damageSound;
     [SerializeField] private AudioSource _jumpSound;
     [SerializeField] private AudioClip _clipOfJumping;
+    [SerializeField] private AudioClip _clipOfCollectingCoin;
+    [SerializeField] private AudioClip _clipOfDamage;
 
     private int _currentGold;
 
     [HideInInspector] public Vector3 LastCheckpointPosition;
 
-	// Use this for initialization
-	private void Start ()
+    // Use this for initialization
+    private void Start()
     {
         _backgroundSound.Play();
-	}
+    }
 
     public void AddGold(int goldToAdd)
     {
@@ -30,12 +32,14 @@ public class GameManager : MonoBehaviour
 
     public void PlayCollectCoinSound()
     {
-        _collectCoinSound.Play();
+        _collectCoinSound.PlayOneShot(_clipOfCollectingCoin, 1.5f);
     }
 
     public void PlayDamageSound()
     {
-        _damageSound.Play();
+        _backgroundSound.Pause();
+        _damageSound.PlayOneShot(_clipOfDamage, 2f);
+        _backgroundSound.Play();
     }
 
     public void PlayJumpSound()

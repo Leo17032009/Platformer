@@ -7,7 +7,7 @@ public class HealthManager : MonoBehaviour
     private PlayerController _player;
     private bool _isRespawning;
     private Coroutine _respawningCoroutine;
-    public float RespawnLength;
+    [SerializeField] private float _respawnLength;
     private Vector3 _respawnPoint;
 
     private void Start()
@@ -35,7 +35,7 @@ public class HealthManager : MonoBehaviour
         _isRespawning = true;
         _player.gameObject.SetActive(false);
 
-        yield return new WaitForSeconds(RespawnLength);
+        yield return new WaitForSeconds(_respawnLength);
 
         _isRespawning = false;
         _player.transform.position = _respawnPoint;

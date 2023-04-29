@@ -8,6 +8,6 @@ public class CoinRotate : MonoBehaviour
 
     private void Update()
     {
-        transform.Rotate(Vector3.left * _speed * Time.deltaTime);
+        transform.Rotate(Vector3.forward * _speed * Time.deltaTime);
     }
 }

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float _moveSpeed;
-    [SerializeField] private float _jumpForce;
+    [SerializeField] private float MoveSpeed;
+    [SerializeField] private float JumpForce;
     [SerializeField] private float _gravityScale;
     [SerializeField] private float _rotateSpeed;
     [SerializeField] private Animator _animator;
@@ -17,47 +17,47 @@ public class PlayerController : MonoBehaviour
     private GameManager _gameManager;
     private bool _isJumping;
 
-	// Use this for initialization
-	private void Start ()
+    // Use this for initialization
+    private void Start()
     {
         _characterController = GetComponent<CharacterController>();
         _gameManager = FindObjectOfType<GameManager>();
     }
-	
-	// Update is called once per frame
-	private void Update ()
+
+    // Update is called once per frame
+    private void Update()
     {
         _isJumping = false;
         //_moveDirection = new Vector3(Input.GetAxis("Horizontal") * _moveSpeed, _moveDirection.y, Input.GetAxis("Vertical") * _moveSpeed);
         float yStore = _moveDirection.y;
-		_moveDirection = (transform.forward * Input.GetAxis("Vertical") * _moveSpeed) + (transform.right * Input.GetAxis("Horizontal"));
-		_moveDirection = _moveDirection.normalized * _moveSpeed;
-		_moveDirection.y = yStore;
+        _moveDirection = (transform.forward * Input.GetAxis("Vertical") * MoveSpeed) + (transform.right * Input.GetAxis("Horizontal"));
+        _moveDirection = _moveDirection.normalized * MoveSpeed;
+        _moveDirection.y = yStore;
 
-		if (_characterController.isGrounded)
-		{
-			_moveDirection.y = 0f;
+        if (_characterController.isGrounded)
+        {
+            _moveDirection.y = 0f;
 
-			if (Input.GetButtonDown("Jump") && _characterController.isGrounded)
-			{
-				_gameManager.PlayJumpSound();
-				_moveDirection.y = _jumpForce;
+            if (Input.GetButtonDown("Jump") && _characterController.isGrounded)
+            {
+                _gameManager.PlayJumpSound();
+                _moveDirection.y = JumpForce;
                 _isJumping = true;
-			}
-		}
+            }
+        }
 
-		_moveDirection.y = _moveDirection.y + (Physics.gravity.y * _gravityScale * Time.deltaTime);
-		_characterController.Move(_moveDirection * Time.deltaTime);
-        transform.rotation = Quaternion.Euler(0f, _pivot.rotation.eulerAngles.y, 0f);
+        _moveDirection.y = _moveDirection.y + (Physics.gravity.y * _gravityScale * Time.deltaTime);
+        _characterController.Move(_moveDirection * Time.deltaTime);
 
-        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) 
-		{
-			Quaternion newRotation = Quaternion.LookRotation(new Vector3(_moveDirection.x, 0f, _moveDirection.z));
-			_playerModel.transform.rotation = Quaternion.Slerp(_playerModel.transform.rotation, newRotation, _rotateSpeed * Time.deltaTime);
-		}
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        {
+            transform.rotation = Quaternion.Euler(0f, _pivot.rotation.eulerAngles.y, 0f);
+            Quaternion newRotation = Quaternion.LookRotation(new Vector3(_moveDirection.x, 0f, _moveDirection.z));
+            _playerModel.transform.rotation = Quaternion.Slerp(_playerModel.transform.rotation, newRotation, _rotateSpeed * Time.deltaTime);
+        }
 
-		_animator.SetBool("isGrounded", _characterController.isGrounded);
-		_animator.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal"))));
+        _animator.SetBool("isGrounded", _characterController.isGrounded);
+        _animator.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal"))));
         _animator.SetBool("isJumping", _isJumping);
-	}
+    }
 }

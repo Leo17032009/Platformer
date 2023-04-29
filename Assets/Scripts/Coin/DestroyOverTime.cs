@@ -6,8 +6,7 @@ public class DestroyOverTime : MonoBehaviour
 {
     [SerializeField] private float _lifeTime;
 
-	// Use this for initialization
-	void Start ()
+	private void OnEnable ()
     {
         Destroy(gameObject, _lifeTime);
 	}

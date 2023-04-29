@@ -14,7 +14,7 @@ public class CoinCollect : MonoBehaviour
         _gameManager = FindObjectOfType<GameManager>();
 	}
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
