@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IncreaseSpeedAndJump : MonoBehaviour
+public class WagonPlatform : MonoBehaviour
 {
     private PlayerController _playerController;
 
