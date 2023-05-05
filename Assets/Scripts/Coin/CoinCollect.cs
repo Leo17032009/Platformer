@@ -8,7 +8,6 @@ public class CoinCollect : MonoBehaviour
     private GameManager _gameManager;
     [SerializeField] private int _coinCost;
 
-	// Use this for initialization
 	private void Start()
     {
         _gameManager = FindObjectOfType<GameManager>();

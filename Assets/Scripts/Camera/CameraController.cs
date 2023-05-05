@@ -10,7 +10,6 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float _rotateSpeed;
     private Vector3 _offset;
 
-	// Use this for initialization
 	private void Start()
     {
         _offset = _target.position - transform.position;

@@ -7,7 +7,6 @@ public class VerticalPlatform : MonoBehaviour
     [SerializeField] private int _amplitude;
     [SerializeField] private float _frequency;
 	
-	// Update is called once per frame
 	private void Update()
     {
         float x = transform.position.x;

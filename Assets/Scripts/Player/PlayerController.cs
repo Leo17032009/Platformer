@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float MoveSpeed;
-    [SerializeField] private float JumpForce;
+    public float MoveSpeed;
+    public float JumpForce;
     [SerializeField] private float _gravityScale;
     [SerializeField] private float _rotateSpeed;
     [SerializeField] private Animator _animator;
@@ -17,14 +17,12 @@ public class PlayerController : MonoBehaviour
     private GameManager _gameManager;
     private bool _isJumping;
 
-    // Use this for initialization
     private void Start()
     {
         _characterController = GetComponent<CharacterController>();
         _gameManager = FindObjectOfType<GameManager>();
     }
 
-    // Update is called once per frame
     private void Update()
     {
         _isJumping = false;

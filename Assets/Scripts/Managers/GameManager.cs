@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector] public Vector3 LastCheckpointPosition;
 
-    // Use this for initialization
     private void Start()
     {
         _backgroundSound.Play();

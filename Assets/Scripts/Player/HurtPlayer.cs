@@ -6,7 +6,6 @@ public class HurtPlayer : MonoBehaviour
 {
     private GameManager _gameManager;
 
-	// Use this for initialization
 	private void Start()
     {
         _gameManager = FindObjectOfType<GameManager>();
