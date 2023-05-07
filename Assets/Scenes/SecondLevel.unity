@@ -488,6 +488,11 @@ Prefab:
       propertyPath: m_Name
       value: DisappearingPlatform1
       objectReference: {fileID: 0}
+    - target: {fileID: 23540718047560090, guid: 2474bc7b7152e9c46960bdfb058d4681,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2474bc7b7152e9c46960bdfb058d4681, type: 2}
   m_IsPrefabParent: 0
@@ -677,7 +682,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1201535709008568, guid: 76c8d859f1f40f141b1f75134b02ad38, type: 2}
       propertyPath: m_Name
-      value: Coin (2)
+      value: Coin10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c8d859f1f40f141b1f75134b02ad38, type: 2}
@@ -1028,7 +1033,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1201535709008568, guid: 76c8d859f1f40f141b1f75134b02ad38, type: 2}
       propertyPath: m_Name
-      value: Coin (1)
+      value: Coin9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c8d859f1f40f141b1f75134b02ad38, type: 2}
@@ -1162,7 +1167,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1878753335940154, guid: 9c591945e5a952b4bac090e675c4b568, type: 2}
       propertyPath: m_Name
-      value: Checkpoint (1)
+      value: Checkpoint1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c591945e5a952b4bac090e675c4b568, type: 2}
@@ -1205,6 +1210,16 @@ Prefab:
     - target: {fileID: 4029638720216410, guid: 8131695059499194cb5753b19be0f911, type: 2}
       propertyPath: m_RootOrder
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 65442528627499804, guid: 8131695059499194cb5753b19be0f911,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 254.77202
+      objectReference: {fileID: 0}
+    - target: {fileID: 65442528627499804, guid: 8131695059499194cb5753b19be0f911,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 75.9936
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8131695059499194cb5753b19be0f911, type: 2}
@@ -1250,7 +1265,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1201535709008568, guid: 76c8d859f1f40f141b1f75134b02ad38, type: 2}
       propertyPath: m_Name
-      value: Coin (3)
+      value: Coin11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c8d859f1f40f141b1f75134b02ad38, type: 2}

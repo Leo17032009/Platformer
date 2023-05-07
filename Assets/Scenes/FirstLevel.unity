@@ -1731,7 +1731,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1878753335940154, guid: 9c591945e5a952b4bac090e675c4b568, type: 2}
       propertyPath: m_Name
-      value: Checkpoint (2)
+      value: Checkpoint2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c591945e5a952b4bac090e675c4b568, type: 2}
@@ -1779,6 +1779,16 @@ Prefab:
     - target: {fileID: 4029638720216410, guid: 8131695059499194cb5753b19be0f911, type: 2}
       propertyPath: m_RootOrder
       value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 65442528627499804, guid: 8131695059499194cb5753b19be0f911,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 301.57245
+      objectReference: {fileID: 0}
+    - target: {fileID: 65442528627499804, guid: 8131695059499194cb5753b19be0f911,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 99.39383
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8131695059499194cb5753b19be0f911, type: 2}
@@ -1870,7 +1880,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1878753335940154, guid: 9c591945e5a952b4bac090e675c4b568, type: 2}
       propertyPath: m_Name
-      value: Checkpoint (1)
+      value: Checkpoint1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c591945e5a952b4bac090e675c4b568, type: 2}

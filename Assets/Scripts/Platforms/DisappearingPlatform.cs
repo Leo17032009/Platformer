@@ -22,18 +22,24 @@ public class DisappearingPlatform : MonoBehaviour
 
             if (gameObject.GetComponentInChildren<Renderer>().enabled)
             {
-                gameObject.GetComponentInChildren<Renderer>().enabled = false;
+                foreach (Renderer renderer in gameObject.GetComponentsInChildren<Renderer>())
+                {
+                    renderer.enabled = false;
+                }
 
-                foreach (Collider collider in gameObject.GetComponentInChildren<BoxCollider>().GetComponentsInChildren<Collider>())
+                foreach (Collider collider in gameObject.GetComponentsInChildren<BoxCollider>())
                 {
                     collider.enabled = false;
                 }
             }
             else
             {
-                gameObject.GetComponentInChildren<Renderer>().enabled = true;
+                foreach (Renderer renderer in gameObject.GetComponentsInChildren<Renderer>())
+                {
+                    renderer.enabled = true;
+                }
 
-                foreach (Collider collider in gameObject.GetComponentInChildren<BoxCollider>().GetComponentsInChildren<Collider>())
+                foreach (Collider collider in gameObject.GetComponentsInChildren<BoxCollider>())
                 {
                     collider.enabled = true;
                 }
