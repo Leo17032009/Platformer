@@ -14,7 +14,7 @@ public class RotatePlatform : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player" && gameObject.GetComponent<CharacterController>().isGrounded)
+        if (other.gameObject.tag == "Player" && other.gameObject.GetComponent<CharacterController>().isGrounded)
         {
             other.transform.parent = transform;
         }
