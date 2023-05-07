@@ -25,6 +25,7 @@ public class RotatePlatform : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             other.transform.parent = null;
+            other.transform.localScale = new Vector3(1, 1, 1);
         }
     }
 }
