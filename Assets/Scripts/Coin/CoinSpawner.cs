@@ -5,38 +5,44 @@ using UnityEngine;
 public class CoinSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject _coin;
-    [HideInInspector] public List<GameObject> Coins = new List<GameObject>();
+    public int[] CountOfCoins;
+    Platform[] _platforms;
+    private float _currentTime;
+    private float _spawnTime = 10;
 
     private void Start()
     {
-        for (int i = Coins.Count; i < 3; Coins.Add(_coin))
+        _platforms = FindObjectsOfType<Platform>();
+
+        CountOfCoins = new int[3];
+        for (int i = 0; i < _platforms.Length; i++)
         {
-            Vector3 coinPosition = new Vector3(Random.Range(0, gameObject.transform.localScale.x), gameObject.transform.localScale.y + 0.5f, Random.Range(0, gameObject.transform.localScale.z));
-            Instantiate(_coin, coinPosition, Quaternion.identity);
+
+            for (int j = 0; j < 3; j++)
+            {
+                Vector3 coinPosition = _platforms[i].transform.position + new Vector3(Random.Range(-_platforms[i].transform.localScale.x, _platforms[i].transform.localScale.x), 1.5f, Random.Range(-_platforms[i].transform.localScale.z, _platforms[i].transform.localScale.z));
+                Instantiate(_coin, coinPosition, Quaternion.identity);
+                CountOfCoins[i] += 2;
+            }
         }
     }
 
     private void Update()
     {
-
-        //for (int i = Coins.Count; i < 3; i++)
-        //{
-            //Vector3 coinPosition = new Vector3(Random.Range(0, gameObject.transform.localScale.x), 1.5f, Random.Range(0, gameObject.transform.localScale.z));
-            StartCoroutine(TimeForSpawn());
-            //Instantiate(_coin, coinPosition, Quaternion.identity);
-            //Coins.Add(_coin);
-        //}
-    }
-
-    private IEnumerator TimeForSpawn()
-    {
-        for (int i = Coins.Count; i < 3; Coins.Add(_coin))
+        for (int i = 0; i < _platforms.Length; i++)
         {
-            Vector3 coinPosition = new Vector3(Random.Range(0, gameObject.transform.localScale.x), gameObject.transform.localScale.y + 0.5f, Random.Range(0, gameObject.transform.localScale.z));
+            for (int j = CountOfCoins[i]; j < 3; j++)
+            {
+                _currentTime += Time.deltaTime;
 
-            yield return new WaitForSeconds(10f);
-
-            Instantiate(_coin, coinPosition, Quaternion.identity);
+                if (_currentTime >= _spawnTime)
+                {
+                    _currentTime = 0;
+                    Vector3 coinPosition = _platforms[i].transform.position + new Vector3(Random.Range(-_platforms[i].transform.localScale.x, _platforms[i].transform.localScale.x), 1.5f, Random.Range(-_platforms[i].transform.localScale.z, _platforms[i].transform.localScale.z));
+                    Instantiate(_coin, coinPosition, Quaternion.identity);
+                    CountOfCoins[i] += 2;
+                }
+            }
         }
     }
 }

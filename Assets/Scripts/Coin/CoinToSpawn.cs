@@ -5,6 +5,7 @@ using UnityEngine;
 public class CoinToSpawn : MonoBehaviour
 {
     private CoinSpawner _coinSpawner;
+    private string _platform;
 
     private void Start()
     {
@@ -12,9 +13,42 @@ public class CoinToSpawn : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+
         if (other.gameObject.tag == "Player")
         {
-            _coinSpawner.Coins.RemoveAt(0);
+
+            if (_platform == "Platform")
+            {
+                _coinSpawner.CountOfCoins[0]--;
+            }
+            else if (_platform == "Platform1")
+            {
+                _coinSpawner.CountOfCoins[1]--;
+            }
+            else if (_platform == "Platform2")
+            {
+                _coinSpawner.CountOfCoins[2]--;
+            }
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (_platform == null)
+        {
+            if (other.gameObject.tag == "Platform")
+            {
+                _platform = "Platform";
+
+            }
+            else if (other.gameObject.tag == "Platform1")
+            {
+                _platform = "Platform1";
+            }
+            else if (other.gameObject.tag == "Platform2")
+            {
+                _platform = "Platform2";
+            }
         }
     }
 }
