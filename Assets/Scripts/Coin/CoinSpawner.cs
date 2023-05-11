@@ -5,8 +5,8 @@ using UnityEngine;
 public class CoinSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject _coin;
-    public int[] CountOfCoins;
-    Platform[] _platforms;
+    [HideInInspector] public int[] CountOfCoins;
+    private Platform[] _platforms;
     private float _currentTime;
     private float _spawnTime = 10;
 
