@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 621d49210174c5d4c9aa451c18a5a5ba
+guid: 8c3eda29bffe58a4bb91477578820168
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -97,7 +97,7 @@ ModelImporter:
       name: PlayerJump
       takeName: mixamo.com
       firstFrame: 0
-      lastFrame: 65
+      lastFrame: 73
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -322,28 +322,28 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_ROOTSHJnt
       parentName: PlayerJump(Clone)
-      position: {x: -0.028153695, y: 1.6444807, z: -0.025609441}
-      rotation: {x: 0.5507425, y: -0.49375743, z: 0.47882903, w: -0.47287318}
+      position: {x: 0.007796455, y: 1.6770022, z: -0.054549377}
+      rotation: {x: 0.497668, y: -0.48433298, z: 0.52237743, w: -0.49484345}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_l_Leg_HipSHJnt
       parentName: Dman_ROOTSHJnt
       position: {x: 0.52279097, y: 0, z: -0.553531}
-      rotation: {x: 0.0085861385, y: 0.77614594, z: -0.6224801, w: -0.10021127}
+      rotation: {x: 0.034059998, y: 0.7471884, z: -0.6545697, w: -0.1099457}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_l_Leg_KneeSHJnt
       parentName: Dman_l_Leg_HipSHJnt
       position: {x: -0.467218, y: 0, z: 0}
-      rotation: {x: -0.01425813, y: -0.3355882, z: -0.014662594, w: 0.94178677}
+      rotation: {x: 0.04063378, y: -0.3424772, z: 0.009243229, w: 0.9386015}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_l_Leg_AnkleSHJnt
       parentName: Dman_l_Leg_KneeSHJnt
       position: {x: -0.552648, y: 0, z: 0}
-      rotation: {x: -0.028884562, y: 0.22612046, z: 0.048063222, w: 0.972484}
+      rotation: {x: -0.016208591, y: 0.22247823, z: 0.038450483, w: 0.97404426}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_l_Leg_BallSHJnt
       parentName: Dman_l_Leg_AnkleSHJnt
       position: {x: -0.17699699, y: 0.021177001, z: 0.369072}
-      rotation: {x: -0.0000008539898, y: 0.7368558, z: -0.00000010143059, w: 0.67605}
+      rotation: {x: -0.0011448767, y: 0.7065709, z: 0.0011384998, w: 0.70764035}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_l_Leg_ToeSHJnt
       parentName: Dman_l_Leg_BallSHJnt
@@ -353,22 +353,22 @@ ModelImporter:
     - name: Dman_r_Leg_HipSHJnt
       parentName: Dman_ROOTSHJnt
       position: {x: 0.52279097, y: 0, z: 0.553531}
-      rotation: {x: -0.74824584, y: 0.028275507, z: -0.06867015, w: 0.659252}
+      rotation: {x: -0.7596359, y: 0.048552737, z: -0.10049556, w: 0.6407001}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_r_Leg_KneeSHJnt
       parentName: Dman_r_Leg_HipSHJnt
       position: {x: 0.467218, y: 0, z: 0}
-      rotation: {x: -0.07215922, y: -0.33271697, z: -0.012213511, w: 0.94018257}
+      rotation: {x: 0.030126031, y: -0.34216124, z: 0.0014790592, w: 0.93915707}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_r_Leg_AnkleSHJnt
       parentName: Dman_r_Leg_KneeSHJnt
       position: {x: 0.552648, y: 0, z: 0}
-      rotation: {x: -0.0020547134, y: 0.22176655, z: 0.0664515, w: 0.9728307}
+      rotation: {x: -0.02762203, y: 0.22039075, z: 0.019516723, w: 0.97482514}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_r_Leg_BallSHJnt
       parentName: Dman_r_Leg_AnkleSHJnt
       position: {x: 0.17699699, y: -0.021177001, z: -0.369072}
-      rotation: {x: -0.00000047841, y: 0.75058913, z: -0.00000047841, w: 0.6607692}
+      rotation: {x: -0.00000021221855, y: 0.71656114, z: -0.00000058881227, w: 0.6975243}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_r_Leg_ToeSHJnt
       parentName: Dman_r_Leg_BallSHJnt
@@ -378,32 +378,32 @@ ModelImporter:
     - name: Dman_Spline_01SHJnt
       parentName: Dman_ROOTSHJnt
       position: {x: -0.41971198, y: 0, z: 0}
-      rotation: {x: 0.0059716473, y: 0.013725211, z: 0.016448807, w: 0.9997527}
+      rotation: {x: 0.0025136762, y: 0.0037049411, z: 0.01512145, w: 0.99987566}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_Spline_02SHJnt
       parentName: Dman_Spline_01SHJnt
       position: {x: -0.42568198, y: 0, z: 0}
-      rotation: {x: 0.012150032, y: 0.031831823, z: 0.032864045, w: 0.9988789}
+      rotation: {x: 0.0051111593, y: 0.007992598, z: 0.030237893, w: 0.9994977}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_l_Arm_ClavicleSHJnt
       parentName: Dman_Spline_02SHJnt
       position: {x: -0, y: 0, z: -0.35741}
-      rotation: {x: 0.38561204, y: -0.44881266, z: 0.6209745, w: 0.5140636}
+      rotation: {x: 0.4926352, y: -0.48356396, z: 0.5228826, w: 0.5000703}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_l_Arm_ShoulderSHJnt
       parentName: Dman_l_Arm_ClavicleSHJnt
       position: {x: -0.29812402, y: 0.063384, z: 0}
-      rotation: {x: 0.2990745, y: -0.14020716, z: 0.010602391, w: 0.9438135}
+      rotation: {x: 0.1201863, y: -0.021309227, z: 0.015929982, w: 0.99239486}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_l_Arm_ElbowSHJnt
       parentName: Dman_l_Arm_ShoulderSHJnt
       position: {x: -0.99513996, y: 0, z: 0}
-      rotation: {x: -0.000000023447821, y: 0.012679658, z: -0.001186604, w: 0.99991894}
+      rotation: {x: -0.0011828167, y: 0.03388228, z: -0.010506479, w: 0.99937}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_l_Arm_WristSHJnt
       parentName: Dman_l_Arm_ElbowSHJnt
       position: {x: -0.544659, y: 0, z: 0}
-      rotation: {x: -0.33530328, y: 0.08453723, z: 0.00036517606, w: 0.93830967}
+      rotation: {x: -0.19975057, y: 0.09663606, z: 0.035900053, w: 0.97440875}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_l_Fingers_01_01SHJnt
       parentName: Dman_l_Arm_WristSHJnt
@@ -418,22 +418,22 @@ ModelImporter:
     - name: Dman_r_Arm_ClavicleSHJnt
       parentName: Dman_Spline_02SHJnt
       position: {x: -0, y: 0, z: 0.35741}
-      rotation: {x: -0.46754596, y: -0.38613042, z: -0.4933659, w: 0.6236138}
+      rotation: {x: -0.4727619, y: -0.46930555, z: -0.50913584, w: 0.54500383}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_r_Arm_ShoulderSHJnt
       parentName: Dman_r_Arm_ClavicleSHJnt
       position: {x: 0.29812402, y: -0.063384, z: 0}
-      rotation: {x: 0.38120443, y: -0.18850593, z: -0.06755536, w: 0.9025436}
+      rotation: {x: 0.26636702, y: -0.06105747, z: -0.003335207, w: 0.96193016}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_r_Arm_ElbowSHJnt
       parentName: Dman_r_Arm_ShoulderSHJnt
       position: {x: 0.99513996, y: 0, z: 0}
-      rotation: {x: -0.000106692314, y: 0.03458433, z: -0.0050690994, w: 0.99938893}
+      rotation: {x: -0.0011107025, y: 0.030953534, z: -0.009906273, w: 0.9994711}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_r_Arm_WristSHJnt
       parentName: Dman_r_Arm_ElbowSHJnt
       position: {x: 0.544659, y: 0, z: 0}
-      rotation: {x: -0.22753502, y: 0.06909062, z: 0.018539706, w: 0.97113883}
+      rotation: {x: -0.24611722, y: 0.07452628, z: 0.026633523, w: 0.96600354}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_r_Fingers_01_01SHJnt
       parentName: Dman_r_Arm_WristSHJnt
@@ -448,7 +448,7 @@ ModelImporter:
     - name: Dman_Spline_TopSHJnt
       parentName: Dman_Spline_02SHJnt
       position: {x: -0.377921, y: 0, z: 0}
-      rotation: {x: -0.0008828399, y: 0.0039295293, z: 0.04907631, w: 0.9987869}
+      rotation: {x: -0.005212755, y: -0.005541856, z: -0.0027691976, w: 0.9999672}
       scale: {x: 1, y: 1, z: 1}
     - name: Dman_head_TopSHJnt
       parentName: Dman_Spline_TopSHJnt

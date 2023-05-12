@@ -222,6 +222,11 @@ Prefab:
       propertyPath: _coinsText
       value: 
       objectReference: {fileID: 1177130790}
+    - target: {fileID: 82271861308547910, guid: 80791acc59be4bc4ebbf984504728923,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9043b02c62697ae48b80dc446c3bc698, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 80791acc59be4bc4ebbf984504728923, type: 2}
   m_IsPrefabParent: 0
@@ -872,7 +877,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4419828008038594, guid: 2474bc7b7152e9c46960bdfb058d4681, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 60.88
+      value: 60.75
       objectReference: {fileID: 0}
     - target: {fileID: 4419828008038594, guid: 2474bc7b7152e9c46960bdfb058d4681, type: 2}
       propertyPath: m_LocalRotation.x

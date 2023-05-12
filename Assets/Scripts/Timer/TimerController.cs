@@ -25,7 +25,7 @@ public class TimerController : MonoBehaviour
                 int minute = Mathf.FloorToInt(_timeLeft / 60);
                 int seconds = Mathf.FloorToInt(_timeLeft % 60);
 
-                _timerText.text = minute + ":" + seconds;
+                _timerText.text = string.Format("{0:00} : {1:00}", minute, seconds);
             }
             else
             {
