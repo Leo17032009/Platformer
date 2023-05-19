@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.8104361, g: 0.85152054, b: 0.9843851, a: 1}
+  m_IndirectSpecularColor: {r: 0.61248016, g: 0.6841366, b: 0.94829553, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -409,6 +409,11 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224256196952839116, guid: 6904aa570879c8340906fef53939ca31,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6904aa570879c8340906fef53939ca31, type: 2}
@@ -1939,6 +1944,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62a566045bb9cb743a4351c6bb440c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startGameButton: {fileID: 0}
+  _exitButton: {fileID: 0}
 --- !u!4 &1487154675
 Transform:
   m_ObjectHideFlags: 0

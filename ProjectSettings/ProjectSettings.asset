@@ -636,12 +636,13 @@ PlayerSettings:
     daydream:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: cb460383-af55-4174-be5b-33a23c3c972b
-  projectName: C-PlatformerUnity2017Template_1
-  organizationId: kirill390390
+  cloudProjectId: c5589681-53a0-45f5-91e1-93c5c88f6011
+  projectName: VPlatformer
+  organizationId: leo_gor2009
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
